@@ -72,5 +72,5 @@ app.get('/api/:name', (request, response)=>{
 })
 
 app.listen(PORT, ()=>{
-    console.log(`Your server in running on PORT ${PORT}, YOU  better go catch it.`)
+    console.log(`Your server in running on PORT ${PORT}, YOU  better go catch it nowgit.`)
 })
