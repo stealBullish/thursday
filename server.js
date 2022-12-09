@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
+const cors = require('cors')
+app.use(cors())
 
 const friendsProfile = {
     'silas':{
@@ -71,6 +73,6 @@ app.get('/api/:name', (request, response)=>{
     
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Your server in running on PORT ${PORT}, YOU  better go catch it nowgit.`)
 })
