@@ -59,11 +59,11 @@ const friendsProfile = {
 
 
 
-app.get('/', (request, response)=>{
+app.get('https://agateam1.netlify.app//', (request, response)=>{
     response.sendFile(__dirname +'/index.html')
 })
 
-app.get('/api/:name', (request, response)=>{
+app.get('https://agateam1.netlify.app//api/:name', (request, response)=>{
     const names = request.params.name
     if(friendsProfile[names]){
         response.json(friendsProfile[names])
